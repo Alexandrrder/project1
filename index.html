@@ -3,27 +3,29 @@
 <html lamg="ru">   
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>It-incubator precource</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header> <span> IT-INCUBATOR </span> </header>
-        <section data-cy="hw1-section-main-pre">
-        <div>
-            <h1>Пидпалый Александр Дмитриевич</h1>
-            <p>Учусь в IT-INCUBATOR-e. Люблю HTML,CSS и все, что связано с frontend разработкой.</p>
-            <img src= "assets/images/2021-porsche-911-turbo-s-pdk-115-edit-1608061341.jpg" alt="Porsche 911 Turbo">
-        </div>
+        <header> <span>IT-INCUBATOR</span> </header>
+        <section class="main-section" data-cy="hw1-section-main-pre">
+            <h1 class="main-title">Пидпалый Александр Дмитриевич</h1>
+            <p class="main-text">Учусь в IT-INCUBATOR-e. Люблю HTML,CSS и все, что связано с frontend разработкой.</p>
+            <img class='main-image' src= 'assets/images/Clip path group.png' alt="it-icubator">
         </section>
-        <section data-cy="hw1-section-about-pre">
-                <select name="City" id="City" start="2">
+        <section class="about-section" data-cy="hw1-section-about-pre">
+                <select class="select" name="City" id="City" start="2">
                     <option value="1">Paris</option>
                     <option selected value="2">Amsterdam</option>
                     <option value="3">Odessa</option>
                 </select>
             <div data-cy="hw1-unordered-list-box-pre">
-                <h2>Любимые бренды одежды</h2>
-                <ul>
+                <h2 class="section-title">Любимые бренды одежды</h2>
+                <ul class="brands-list">
                     <li>
                         <div>Tommy Hilfiger</div>
                     </li>
@@ -36,8 +38,8 @@
                 </ul>
             </div>
             <div data-cy="hw1-ordered-list-box-pre">
-                <h2> Любимые страны</h2>
-                    <ol start="1">
+                <h2 class="section-title"> Любимые страны</h2>
+                    <ol class="contries-list" start="1">
                         <li>
                             <div>Франция</div>
                         </li>
@@ -50,62 +52,56 @@
                     </ol>
             </div>
             <div data-cy="hw1-skills-box-pre">
-                <h2>Мои скиллы</h2>
-                <form>
+                <h2 class="section-title">Мои скиллы</h2>
+                <form class="my-skills">
                     <input id="Синематика" type="checkbox" checked>
-                    <label for="Синематика">Синематика,Теги</label>
-                </form>
-                <form>
+                    <label class="label"  for="Синематика">Синематика,Теги</label>
+
                     <input id="Формы изображений" type="checkbox" checked>
-                    <label for="Формы изображений">Формы изображений</label>
-                </form>
-                <form>
+                    <label class="label" for="Формы изображений">Формы изображений</label>
+
                     <input id="Формы" type="checkbox" checked>
-                    <label for="Формы">Формы</label>
-                </form>
-                <form>
+                    <label class="label" for="Формы">Формы</label>
+
                     <input id="Списки - структура и стилизация. Счетчики" type="checkbox" checked>
-                    <label for="Списки - структура и стилизация. Счетчики">Списки - структура и стилизация. Счетчики</label>
+                    <label class="label" for="Списки - структура и стилизация. Счетчики">Списки - структура и стилизация. Счетчики</label>
                 </form>
             </div>
-            <div>
-                <form>
-                    <input type="new-skill" name="new-skill" placeholder="Новый скилл" size="18"/>
-                    <button type="add">Добавить</button> <hr>
-                </form>
-            </div>
-            <table data-cy="hw-about-table-pre" border="1">
-                <tr>
-                    <th>п/п</th>
-                    <th>Наименование</th>
-                    <th>Колличество</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Монитор</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Клавиатора</td>
-                    <td>1</td>
-                </tr>
-                <tr></tr>
-                    <td>3</td>
-                    <td>Мышь</td>
-                    <td>1</td>
-                </tr>
-                <tfoot>
-                <tr>
-                    <td colspan="2">Итого</td>
-                    <td>4</td>
-                </tr>
-                </tfoot>
-                
-            </table>
+
+                    <input class="text-field" type="new-skill" name="new-skill" placeholder="Новый скилл" size="18"/>
+
+                    <button class="btn" type="add">Добавить</button> 
+                    <hr class="line" data-cy="hw2-line-pre">
+
+                    <table class="table" data-cy="hw2-about-table-pre" border="1">
+                        <tr class="tr">
+                            <th>п/п</th>
+                            <th>Наименование</th>
+                            <th>Количество</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Монитор</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Клавиатура</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Мышь</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Итого:</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
         </section>
-        <footer data-cy="hw-footer-pre">
-            <p><a href="https://it-incubator.io/">it-incubator</a></p>          
+        <footer class="footer" data-cy="hw-footer-pre">
+            <a class="footer-link" href="https://it-incubator.io/">it-incubator</a>         
         </footer>
     </body>
 </html>
