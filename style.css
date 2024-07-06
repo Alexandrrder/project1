@@ -6,7 +6,8 @@
 
 html,
 body {
-    font-family: 'inter';
+    font-family: 'Inter';
+    color: #303030;
 }
 
 a {
@@ -27,56 +28,93 @@ header {
     color: white;
     height: 40px;
     padding: 9px 0;
-    font-weight: 500;
+}
+
+header span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
 }
 
 .main-section {
-background-color: #FAFAFF;
+    padding-top: 60px;
+    min-height: 1024px;
+    background-color: #FAFAFF;
 
 }
 
 .main-title {
-    padding-top: 40px;
-    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
 .main-text {
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .main-image {
+    max-width: 715px;
     margin-bottom: 100px
 }
 
 .about-section {
-    margin-top: 70px;
+    background-color: #fff;
+    padding-top: 100px;
 }
 
 .select {
+    border: 1px #303030 30%;
+    border-radius: 5px;
     height: 35px;
-    width: 135px;
-    font-weight: 300;
-    font-size: medium;
+    width: 150px;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .section-title {
-    padding-bottom: 25px;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.brands-list {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contries-list { 
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .text-field {
     height: 36px;
-    width: 350px;
-    font-size:medium;
-    padding-left: 5px;
+    width: 330px;
+    border: 1px solid #3030304D;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 12px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
 }
 
 .btn {
-    border: 4px solid #2965F1;
-    background: #2965F1;
-    color: white;
-    padding: 7px 30px;
-    border-radius: 5px;
     height: 36px;
+    width: 125px;
+    border-radius: 5px;
+    background-color: #2965F1;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff ;
 }
 
 .line {
@@ -85,29 +123,34 @@ background-color: #FAFAFF;
 
 }
 
-.table {
-    table-layout: fixed;
-    width: 400px;
-    border-collapse: collapse;
+.table { 
+    height: 196px;
+    border: 1px;
+    table-layout: fixed; 
+    width: 350px;
+    border-collapse: collapse; 
+    font-weight: 400;
+    font-size: 14px;
 }
 
-.th,td {
-    height: 35px;
-    padding-left: 5px;
+.th, td {
+    padding: 12px 15px 15px;
 }
 
 .tr {
-    height: 35px;
+    height: 40px;
 }
 
 .footer {
     margin-top: 100px;
-    height: 80px;
+    height: 70px;
+    padding: 26px 0px;
     background-color: #A3A7FF4D;
-    padding-top: 30px;
-    color:#2965F1;
+
 }
 
 .footer-link {
+    font-size: 14px;
+    font-weight: 400;
     color:#2965F1;
 }
