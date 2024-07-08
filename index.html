@@ -11,21 +11,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header> <span>IT-INCUBATOR</span> </header>
+        <header data-cy="hw2-header-span"> <span>IT-INCUBATOR</span> </header>
         <section class="main-section" data-cy="hw1-section-main-pre">
-            <h1 class="main-title">Пидпалый Александр Дмитриевич</h1>
-            <p class="main-text">Учусь в IT-INCUBATOR-e. Люблю HTML,CSS и все, что связано с frontend разработкой.</p>
-            <img class='main-image' src= 'assets/images/Clip path group.png' alt="it-icubator">
+            <h1 class="main-title" data-cy="hw2-main-title">Пидпалый Александр Дмитриевич</h1>
+            <p class="main-text" data-cy="hw2-text">Учусь в IT-INCUBATOR-e. Люблю HTML,CSS и все, что связано с frontend разработкой.</p>
+            <img class='main-image' data-cy="hw2-main-image" src= 'assets/images/Clip path group.png' alt="it-icubator">
         </section>
-        <section class="about-section" data-cy="hw1-section-about-pre">
+        <section class="about-section" data-cy="hw2-section-about-pre">
                 <select class="select" name="City" id="City" start="2">
                     <option value="1">Paris</option>
                     <option selected value="2">Amsterdam</option>
                     <option value="3">Odessa</option>
                 </select>
             <div data-cy="hw1-unordered-list-box-pre">
-                <h2 class="section-title">Любимые бренды одежды</h2>
-                <ul class="brands-list">
+                <h2 class="section-title" data-cy="hw2-section-title-pre">Любимые бренды одежды</h2>
+                <ul class="brands-list" data-cy="hw2-frameworks-list-pre">
                     <li>
                         <div>Tommy Hilfiger</div>
                     </li>
@@ -38,8 +38,8 @@
                 </ul>
             </div>
             <div data-cy="hw1-ordered-list-box-pre">
-                <h2 class="section-title"> Любимые страны</h2>
-                    <ol class="contries-list" start="1">
+                <h2 class="section-title" data-cy="hw2-section-title-pre"> Любимые страны</h2>
+                    <ol class="contries-list" data-cy="hw2-books-list-pre" start="1">
                         <li>
                             <div>Франция</div>
                         </li>
@@ -52,24 +52,24 @@
                     </ol>
             </div>
             <div data-cy="hw1-skills-box-pre">
-                    <h2 class="section-title">Мои скиллы</h2>
-                    <label class="label"  for="Синематика">
+                    <h2 class="section-title" data-cy="hw2-section-title-pre">Мои скиллы</h2>
+                    <label class="label" data-cy="hw2-label-pre" for="Синематика">
                         <input id="1" type="checkbox" checked>
                         Синематика,Теги</label>
-                    <label class="label" for="Формы изображений">
+                    <label class="label" data-cy="hw2-label-pre" for="Формы изображений">
                         <input id="2" type="checkbox" checked>
                         Формы изображений</label>
-                    <label class="label" for="Формы"> 
+                    <label class="label" data-cy="hw2-label-pre" for="Формы"> 
                         <input id="3" type="checkbox" checked>
                         Формы</label>
-                    <label class="label" for="Списки - структура и стилизация. Счетчики"> 
+                    <label class="label" data-cy="hw2-label-pre" for="Списки - структура и стилизация. Счетчики"> 
                         <input id="4" type="checkbox" checked>
                         Списки - структура и стилизация. Счетчики</label>
             </div>
 
-                    <input class="text-field" type="new-skill" name="new-skill" placeholder="Новый скилл" size="18"/>
+                    <input class="text-field" data-cy="hw2-text-field-pre" type="new-skill" name="new-skill" placeholder="Новый скилл" size="18"/>
 
-                    <button class="btn" type="add">Добавить</button> 
+                    <button class="btn"  data-cy="hw2-btn-pre" type="add">Добавить</button> 
                     <hr class="line" data-cy="hw2-line-pre">
 
                     <table class="table" data-cy="hw2-about-table-pre" border="1">
@@ -100,7 +100,7 @@
                     </table>
         </section>
         <footer class="footer" data-cy="hw-footer-pre">
-            <a class="footer-link" href="https://it-incubator.io/">it-incubator</a>         
+            <a class="footer-link" data-cy="hw-footer-link-pre" href="https://it-incubator.io/">it-incubator</a>         
         </footer>
     </body>
 </html>
