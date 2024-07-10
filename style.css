@@ -61,7 +61,7 @@ header span {
 
 .about-section {
     background-color: #fff;
-    padding-top: 100px;
+    padding-top: 100px 0px;
 }
 
 .select {
@@ -87,6 +87,7 @@ header span {
 .contries-list { 
     font-size: 16px;
     font-weight: 400;
+    padding: 0px 20px;
 }
 
 .label {
@@ -133,8 +134,12 @@ header span {
     font-size: 14px;
 }
 
-.th, td {
-    padding: 12px 15px 15px;
+.th {
+    padding: 12px 15px;
+}
+
+.td {
+    padding: 12px 15px;
 }
 
 .tr {
