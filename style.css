@@ -83,7 +83,9 @@ header span {
 .brands-list {
     font-size: 16px;
     font-weight: 400;
+    padding: 0px 20px;
 }
+
 
 .contries-list { 
     font-size: 16px;
@@ -134,6 +136,11 @@ header span {
     font-weight: 400;
     font-size: 14px;
 }
+
+.th {
+    padding: 12px 15px;
+}
+
 
 .th, td {
     padding: 12px 15px;
