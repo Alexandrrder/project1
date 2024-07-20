@@ -1,106 +1,133 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>It-incubator precourse</title>
+</head>
+<body data-cy="hw3-body-pre">
+    <header data-cy="hw3-header">
+        <div class="container">
+            <span data-cy="hw3-header-span">IT-INCUBATOR</span>
+        </div>
+    </header>
 
-<html lamg="ru">   
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content ="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
-        <title>It-incubator precource</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header data-cy="hw2-header-span"> <span>IT-INCUBATOR</span> </header>
-        <section class="main-section" data-cy="hw2-section-main-pre">
-            <h1 class="main-title" data-cy="hw2-main-title">Пидпалый Александр Дмитриевич</h1>
-            <p class="main-text" data-cy="hw2-text">Учусь в IT-INCUBATOR-e. Люблю HTML,CSS и все, что связано с frontend разработкой.</p>
-            <img class='main-image' data-cy="hw2-main-image" src= 'assets/images/Clip path group.png' alt="it-icubator">
-        </section>
-        <section class="about-section" data-cy="hw2-section-about-pre">
-                <select class="select" data-cy="hw2-select-pre" name="City" id="City" start="2">
-                    <option value="1">Paris</option>
-                    <option selected value="2">Amsterdam</option>
-                    <option value="3">Odessa</option>
+    <section class="main-section" data-cy="hw3-section-main-pre">
+        <div class="container">
+            <div class="wrapper">
+                <div class="text-wrapper" data-cy="hw3-text-wrapper-pre">
+                    <h1 class="main-title" data-cy="hw3-main-title">Пидпалый Александр Дмитриевич</h1>
+                    <p class="main-text" data-cy="hw3-text">Учусь в IT-INCUBATOR-е. Люблю HTML, CSS и все, что связано с frontend разработкой.</p>
+                </div>
+                <img class="main-image" data-cy="hw3-main-image" src="https://abbtech.az/storage/uploads/files/1687508692_1615533694-frontendd.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" data-cy="hw3-section-about-pre">
+        <div class="container">
+            <div class="wrapper">
+                <select data-cy="hw3-select-pre" name="" id="">
+                    <option value="">Paris</option>
+                    <option value="" selected>Amsterdam</option>
+                    <option value="">Viena</option>
                 </select>
-            <div data-cy="hw1-unordered-list-box-pre">
-                <h2 class="section-title" data-cy="hw2-section-title-pre">Любимые бренды одежды</h2>
-                <ul class="brands-list" data-cy="hw2-frameworks-list-pre">
-                    <li>
-                        <div>Tommy Hilfiger</div>
-                    </li>
-                    <li>
-                        <div>Polo Ralph Lauren</div>
-                    </li>
-                    <li>
-                        <div>Hugo Boss</div>
-                    </li>
-                </ul>
-            </div>
-            <div data-cy="hw1-ordered-list-box-pre">
-                <h2 class="section-title" data-cy="hw2-section-title-pre"> Любимые страны</h2>
-                    <ol class="contries-list" data-cy="hw2-books-list-pre" start="1">
-                        <li>
-                            <div>Франция</div>
-                        </li>
-                        <li>
-                            <div>Испания</div>
-                        </li>
-                        <li>
-                            <div>Украина</div>
-                        </li>
-                    </ol>
-            </div>
-            <div class="skills-list" data-cy="hw2-skills-list-pre">
-                    <h2 class="section-title" data-cy="hw2-section-title-pre">Мои скиллы</h2>
-                    <label class="label" data-cy="hw2-label-pre" for="Синематика">
-                        <input id="1" type="checkbox" checked>
-                        Синематика,Теги</label>
-                    <label class="label" data-cy="hw2-label-pre" for="Формы изображений">
-                        <input id="2" type="checkbox" checked>
-                        Формы изображений</label>
-                    <label class="label" data-cy="hw2-label-pre" for="Формы"> 
-                        <input id="3" type="checkbox" checked>
-                        Формы</label>
-                    <label class="label" data-cy="hw2-label-pre" for="Списки - структура и стилизация. Счетчики"> 
-                        <input id="4" type="checkbox" checked>
-                        Списки - структура и стилизация. Счетчики</label>
+
+                <div class="info-wrapper" data-cy="hw3-info-wrapper-pre">
+                    <div class="frameworks" data-cy="hw3-frameworks-pre">
+                        <h2 class="section-title" data-cy="hw3-section-title-pre">Любимые страны</h2>
+                        <ul class="frameworks-list" data-cy="hw3-frameworks-list-pre">
+                            <li>Франция</li>
+                            <li>Испания</li>
+                            <li>Италия</li>
+                        </ul>
+                    </div>
+                    <div class="books" data-cy="hw3-books-pre">
+                        <h2 class="section-title" data-cy="hw3-section-title-pre">Любимые бренды</h2>
+                        <ol class="books-list" data-cy="hw3-books-list-pre">
+                            <li>Tommy Hilfiger</li>
+                            <li>Polo Ralph Lauren</li>
+                            <li>Hugo Boss</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="skills-wrapper">
+                    <h2 class="section-title" data-cy="hw3-section-title-pre">Мои скиллы</h2>
+
+                    <div class="skills-block" data-cy="hw3-skills-block-pre">
+                        <div class="skills" data-cy="hw3-skills-pre">
+                            <label class="label" data-cy="hw3-label-pre" for="1">
+                                <input type="checkbox" checked name="" id="1">
+                                HTML5
+                            </label>
+
+                            <label class="label" data-cy="hw3-label-pre" for="2">
+                                <input type="checkbox" checked name="" id="2">
+                                CSS3
+                            </label>
+
+                            <label class="label" data-cy="hw3-label-pre" for="3">
+                                <input type="checkbox" name="" id="3">
+                                JavaScript
+                            </label>
+
+                            <label class="label" data-cy="hw3-label-pre" for="4">
+                                <input type="checkbox" name="" id="4">
+                                Jquery
+                            </label>
+
+                            <label class="label" data-cy="hw3-label-pre" for="5">
+                                <input type="checkbox" name="" id="5">
+                                React
+                            </label>
+                        </div>
+
+                        <form>
+                            <input class="text-field" data-cy="hw3-text-field-pre" type="text" placeholder="Новый скилл">
+                            <button class="btn" data-cy="hw3-btn-pre">Добавить</button>
+                        </form>
+                    </div>
+                </div>
             </div>
 
-                    <input class="text-field" data-cy="hw2-text-field-pre" type="new-skill" name="new-skill" placeholder="Новый скилл" size="18"/>
+            <hr class="line" data-cy="hw3-line-pre">
 
-                    <button class="btn"  data-cy="hw2-btn-pre" type="add">Добавить</button> 
-                    <hr class="line" data-cy="hw2-line-pre">
+            <table data-cy="hw3-about-table-pre" border="1">
+                <tr>
+                    <th>п/п</th>
+                    <th>Наименование</th>
+                    <th>Количество</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Монитор</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Клавиатура</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Мышь</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Итого:</td>
+                    <td>4</td>
+                </tr>
+            </table>
+        </div>
+    </section>
 
-                    <table class="table" data-cy="hw2-about-table-pre" border="1">
-                        <tr class="tr">
-                            <th class="th">п/п</th>
-                            <th>Наименование</th>
-                            <th>Количество</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Монитор</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Клавиатура</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Мышь</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">Итого:</td>
-                            <td>4</td>
-                        </tr>
-                    </table>
-        </section>
-        <footer class="footer" data-cy="hw-footer-pre">
-            <a class="footer-link" data-cy="hw-footer-link-pre" href="https://it-incubator.io/">it-incubator</a>         
-        </footer>
-    </body>
+    <footer data-cy="hw3-footer-pre">
+        <a class="footer-link" data-cy="hw3-footer-link-pre" href="https://it-incubator.io/">it-incubator</a>
+    </footer>
+</body>
 </html>

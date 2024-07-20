@@ -4,43 +4,49 @@
     box-sizing: border-box;
 }
 
-html,
+.container {
+    outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+}
+
 body {
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     color: #303030;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul, ol{
-    list-style: none;
-}
-
-button {
-    border: none;
-    background-color: transparent;
 }
 
 header {
     background-color: #2965F1;
-    color: white;
-    height: 40px;
-    padding: 9px 0;
+    padding: 23px 0;
 }
 
 header span {
-    font-size: 20px;
     font-weight: 700;
+    font-size: 20px;
     color: #fff;
 }
 
 .main-section {
-    padding: 60px 0px;
-    min-height: 1024px;
-    background-color: #FAFAFF;
+    display: flex;
+    background-color: #fafaff;
+    padding: 60px 0;
+    min-height: 100vh;
 
+    /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
+}
+
+.main-section .wrapper {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    align-items: center
+    /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
+}
+
+.text-wrapper {
+    max-width: 425px;
+    /* 📍 Cвойство для ограничения ширины блока с текстом в первой секции */
 }
 
 .main-title {
@@ -50,13 +56,12 @@ header span {
 }
 
 .main-text {
-    font-size: 18px;
     font-weight: 400;
+    font-size: 18px;
 }
 
 .main-image {
     max-width: 715px;
-    margin-bottom: 100px
 }
 
 .about-section {
@@ -64,14 +69,36 @@ header span {
     padding: 100px 0px;
 }
 
-.select {
-    border: 1px #303030 30%;
+.about-section .wrapper {
+    /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
+}
+
+select {
+    border: 1px solid rgba(48, 48, 48, 0.3);
     border-radius: 5px;
-    height: 35px;
     width: 150px;
+    padding: 8px 12px;
     font-weight: 400;
     font-size: 16px;
+    appearance: none; 
+    background-image: url("assets/images/Vector\ \(2\).png");
     background-repeat: no-repeat;
+    background-position: right 12px top 50%;
+}
+
+select:hover,
+.text-field:hover {
+    /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
+}
+
+
+.info-wrapper {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    
+    /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
 }
 
 .section-title {
@@ -80,91 +107,102 @@ header span {
     margin-bottom: 25px;
 }
 
-.brands-list {
-    font-size: 16px;
-    font-weight: 400;
-    padding: 0px 20px;
+.frameworks,
+.books {
+    min-width: 50%;
 }
 
-
-.contries-list { 
-    font-size: 16px;
-    font-weight: 400;
-    padding: 0px 20px;
+.frameworks-list,
+.books-list {
+    /* 📍 Свойства flexbox для отступов между элементами в списках */
 }
 
-.skills-list {
-    padding: 0px 20px;
+.frameworks-list {
+    font-weight: 400;
+    font-size: 16px;
+    list-style-image: url(assets/images/Vector\ \(2\)\ —\ копия.png);
+    padding-left: 20px;
+}
+
+.skills-block {
+    /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
+}
+
+.skills {
+    /* 📍 Свойства flexbox для расположения элементов с классом .label */
+}
+
+.books-list {
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 20px;
 }
 
 .label {
-    font-size: 16px;
     font-weight: 400;
+    font-size: 16px;
+}
+
+form {
+    margin-bottom: 40px;
 }
 
 .text-field {
-    height: 36px;
-    width: 330px;
-    border: 1px solid #3030304D;
+    border: 1px solid rgba(48, 48, 48, 0.3);
     border-radius: 5px;
-    font-size: 16px;
+    max-width: 330px;
+    width: 100%;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 8px 12px;
     font-weight: 400;
-    padding-left: 12px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-
+    font-size: 16px;
 }
 
 .btn {
-    height: 36px;
-    width: 125px;
+    border: none;
     border-radius: 5px;
-    background-color: #2965F1;
-    font-size: 14px;
+    width: 125px;
+    height: 36px;
+    background-color: #2965f1;
     font-weight: 700;
-    color: #fff ;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn:hover {
+    /* 📍 Стили для кнопки при наведении курсора */
 }
 
 .line {
-    margin-top: 60px;
-    margin-bottom: 60px;
-
+    margin: 60px 0;
 }
 
-.table { 
-    height: 196px;
-    border: 1px;
-    table-layout: fixed; 
-    width: 350px;
-    border-collapse: collapse; 
+table {
+    border: 1px solid #95a1bb;
+    border-collapse: collapse;
     font-weight: 400;
     font-size: 14px;
+    margin: 0 auto;
 }
 
-.th {
-    height: 40px;
+th, td {
     padding: 12px 15px;
 }
 
-td {
-    height: 40px;
-    padding: 12px 15px;
-}
-
-.tr {
-    height: 40px;
-}
-
-.footer {
-    margin-top: 100px;
-    height: 70px;
-    padding: 26px 0px;
-    background-color: #A3A7FF4D;
-
+footer {
+    background-color: rgba(163, 167, 255, 0.3);
+    padding: 26px 0;
+    /* 📍 Свойство для расположения ссылки горизонтально по центру */
 }
 
 .footer-link {
-    font-size: 14px;
     font-weight: 400;
-    color:#2965F1;
+    font-size: 14px;
+    color: #2965f1;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    /* 📍 Стили для ссылки при наведении курсора */
 }
